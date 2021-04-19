@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="artPage.js"></script>
+    <link rel="stylesheet" href="artPageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!--
+        Importing both a CSS stylesheet, External Jscript File and external Text fonts
+    -->
+
+</head>
+
+
+
+<body id="body1">
+
+
+    <header>
+
+        <!-- Use of header elements to easliy seperate nav bar from body of web page -->
+        <div id="navDiv">
+            <video playsinline autoplay muted loop poster="polina.jpg" id="logo">
+
+                <source src="Video/WebsiteLogoWhite3.mp4" type="video/mp4">
+            </video>
+
+            <!-- Use of video elements in page to make the webpage more presentable. 
+                CSS is used to make the video fit in the left corner of the nav bar -->
+
+
+            <nav>
+                <ul>
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Youtube3_svg_5282548.png" alt=""
+                                class="social"></a></li>
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Twitter5_svg_5282551.png" alt=""
+                                class="social"></a></li>
+
+                    <!-- Images within a tags become interactive, allowing for an image to take the user to a link when clicked -->
+
+                    <li><a href=""><img src="Logos/iconfinder_--26_2645010.png" alt="" class="social"></a></li>
+                    <div id="socialTextDiv">
+                        <li id="socialtext"><a href="artAboutPage.html">Email Me</a></li>
+                    </div>
+
+                </ul>
+            </nav>
+
+            <!-- Use of list and nav elements to create an interactive navigation bar for the page -->
+        </div>
+
+    </header>
+
+    <div id="titleDiv">
+
+        <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+        <ul id="titleUl">
+            <li><a href="artStorePage.html">
+                    <h1 class="menu">Store</h1>
+                </a></li>
+            <li><a href="artAboutPage.html">
+                    <h1 class="menu">About</h1>
+                </a></li>
+            <li><a href="artAnimationsPage.html">
+                    <h1 class="menu">Animations</h1>
+                </a></li>
+            <li><a href="artWorksPage.html">
+                    <h1 class="menu">Artworks</h1>
+                </a></li>
+            <li><a href="artBehindPage.html">
+                    <h1 class="menu">Behind the Scenes</h1>
+                </a></li>
+        </ul>
+
+        <!-- Use of unordered list to create an interactive menu on the page -->
+
+        <br>
+
+        <!-- Br elements help break apart page elements -->
+
+        <h4 class="footer">This website is considered another artistic endevour of mine
+            so I plan to update and change it regularly, stay tuned!
+        </h4>
+        <h4 class="footer" id="footerName"> - Max 0_o</h4>
+    </div>
+
+    <div class="videoContainer">
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+
+            <source src="Video/WebBackground3.mp4" type="video/mp4">
+        </video>
+
+        <!-- Use of video elements in background to make the webpage more presentable. 
+                CSS is used to make the video fit in the background behind all other elements -->
+    </div>
+
+
+</body>
+
+
+
+</html>

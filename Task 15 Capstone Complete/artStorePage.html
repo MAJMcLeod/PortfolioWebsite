@@ -1,0 +1,165 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="artPage.js"></script>
+    <link rel="stylesheet" href="artPageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!--
+        Importing both a CSS stylesheet, External Jscript File and external Text fonts
+    -->
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Use of header elements to easliy seperate nav bar from body of web page -->
+        <div id="navDiv3">
+            <nav id="navSocial">
+                <ul class="navList2">
+
+                    <!-- Use of list and nav elements to create an interactive navigation bar for the page which allows 
+                    for the user to have quick and easy navigation through the pages -->
+
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Youtube3_svg_5282548.png" alt=""
+                                class="social2"></a></li>
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Twitter5_svg_5282551.png" alt=""
+                                class="social2"></a></li>
+
+                    <li><a href=""><img src="Logos/iconfinder_--26_2645010.png" alt="" class="social2"></a></li>
+
+                    <div id="socialTextDiv">
+                        <li id="socialtext2"><a href="artAboutPage.html">Email Me</a></li>
+
+                        <!-- a tags within list elements allow to list elements to have links to other pages -->
+                    </div>
+
+                </ul>
+
+            </nav>
+        </div>
+
+        <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+        <div id="navDiv2">
+            <video playsinline autoplay muted loop poster="polina.jpg" id="logo">
+
+                <!-- video tag allows for import of video elements, along with commands to control 
+            said videa such as speed, loop, sound volume etc... -->
+
+                <source src="Video/StoreLogoWhite.mp4" type="video/mp4">
+
+
+                <!-- Use of video elements in page to make the webpage more presentable. 
+                CSS is used to make the video fit in the left corner of the nav bar -->
+            </video>
+
+            <div>
+                <nav id="navList">
+                    <ul class="navText">
+                        <li><a href="artLandingPage.html" class="navLi">Home</a></li>
+                        <li><a href="artAboutPage.html" class="navLi">About</a></li>
+                        <li><a href="artWorksPage.html" class="navLi">Artworks</a></li>
+                        <li><a href="artAnimationsPage.html" class="navLi">Animations</a></li>
+                        <li><a href="artBehindPage.html" class="navLi">Behind the Scenes</a></li>
+                        <li><a href="artCartPage.html" class="navLi" id="liStore">Cart</a></li>
+
+
+
+                    </ul>
+                </nav>
+            </div>
+
+            <!-- Use of list and nav elements to create an interactive navigation bar for the page which allows 
+                    for the user to have quick and easy navigation through the pages -->
+
+        </div>
+
+    </header>
+
+    <div id="reviewDiv" style="position: relative;">
+
+        <div id="reviewDivInner">
+            <a style="position: absolute; right: 3; top: -42;">
+                <h4 style="font-weight: 600; font-size: 25px;" onclick="itemInfoHide()">X</h4>
+            </a>
+            <div style="background-color: black; width:70%; display: flex; justify-content: space-around; height: 100%">
+                <img src="StoreImages/Shirts/Shirt.jpg" class="storeImg" alt="" id="reviewImage">
+
+            </div>
+            <div
+                style="background-color: white; width:30%; display: flex; justify-content: space-around; height: 100%;">
+
+                <div>
+                    <h1 id="itemName">White T-shirt</h1>
+                    <h4 style="color: black;" id="itemPrice">20$</h4>
+                    <h4 style="color: black;" id="itemDesc">White T-shirt, stylish and simple</h4>
+
+                    <button id="" class="buttonCart" onclick="addCart(this.id.charAt(3))">Add to cart</button>
+                    <button id="" class="buttonCart"><a href="artCartPage.html">Go to Cart</a></button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- This review div is used to look at specific details of an item selected in the store, it initially starts of hidden but is unhidden when 
+    an item is interacted with  -->
+
+    <!-- let $x = swag 
+
+if x = swag then hypebeast  -->
+
+
+    <div class="imgContainer">
+
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+
+            <source src="Video/HallwayFinal_5.mp4" type="video/mp4">
+        </video>
+
+        <!-- Use of video elements in background to make the webpage more presentable. 
+                CSS is used to make the video fit in the background behind all other elements -->
+    </div>
+
+    <div id="navStore">
+        <nav>
+            <ul class="navText">
+
+
+            </ul>
+        </nav>
+    </div>
+
+    <!-- Redundant nav that was used for a removed store navigation feature -->
+
+    <div>
+        <table
+            style="background-color:rgb(49, 49, 49, 0.4); display: flex; justify-content: space-around; text-align: center;"
+            id="StoreTable">
+
+            <!-- Use of internal CSS for finer control over specific html elements, overriding that of the external CSS file -->
+        </table>
+    </div>
+
+
+
+    <script>
+        displayItems();
+        $("#reviewDiv").hide();
+        imgInteract();
+    </script>
+
+    <!-- Use of script tags to run existing functions in the external JScript file -->
+
+</body>
+
+</html>

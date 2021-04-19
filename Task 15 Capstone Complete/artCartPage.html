@@ -1,0 +1,244 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="artPage.js"></script>
+    <link rel="stylesheet" href="artPageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!--
+        Importing both a CSS stylesheet, External Jscript File and external Text fonts
+    -->
+
+
+</head>
+
+<body>
+    <header>
+
+        <!-- Use of header elements to easliy seperate nav bar from body of web page -->
+        <div id="navDiv3">
+            <nav id="navSocial">
+                <ul class="navList2">
+
+                    <!-- Use of list and nav elements to create an interactive navigation bar for the page which allows 
+                    for the user to have quick and easy navigation through the pages -->
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Youtube3_svg_5282548.png" alt=""
+                                class="social2"></a></li>
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Twitter5_svg_5282551.png" alt=""
+                                class="social2"></a></li>
+
+                    <li><a href=""><img src="Logos/iconfinder_--26_2645010.png" alt="" class="social2"></a></li>
+
+                    <div id="socialTextDiv">
+                        <li id="socialtext2"><a href="artAboutPage.html">Email Me</a></li>
+                        <!-- a tags within list elements allow to list elements to have links to other pages -->
+                    </div>
+
+                </ul>
+
+            </nav>
+        </div>
+
+        <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+        <div id="navDiv2">
+            <video playsinline autoplay muted loop poster="polina.jpg" id="logo">
+
+                <!-- video tag allows for import of video elements, along with commands to control 
+            said videa such as speed, loop, sound volume etc... -->
+
+                <source src="Video/WebsiteCartLogo.mp4" type="video/mp4">
+
+                <!-- Use of video elements in page to make the webpage more presentable. 
+                CSS is used to make the video fit in the left corner of the nav bar -->
+            </video>
+
+            <div>
+                <nav id="navList">
+                    <ul class="navText">
+                        <li><a href="artLandingPage.html" class="navLi">Home</a></li>
+                        <li><a href="artAboutPage.html" class="navLi">About</a></li>
+                        <li><a href="artWorksPage.html" class="navLi">Artworks</a></li>
+                        <li><a href="artAnimationsPage.html" class="navLi">Animations</a></li>
+                        <li><a href="artBehindPage.html" class="navLi">Behind the Scenes</a></li>
+
+                    </ul>
+                </nav>
+
+                <!-- Use of list and nav elements to create an interactive navigation bar for the page which allows 
+                    for the user to have quick and easy navigation through the pages -->
+            </div>
+
+        </div>
+
+    </header>
+
+    <div
+        style="margin: auto; display: flex; justify-content: space-around; text-align: center; width: 1300px; padding-top: 60px;">
+
+        <!-- Use of internal CSS to give finer control over styling of specific html elements and thus overriding that of
+        the external CSS fiel styling -->
+
+        <div class="cartDivMain">
+            <div id="cartDiv"
+                style="margin: auto; background-color: rgb(49, 49, 49, 0.7); width: 630px; height: 700px;">
+
+                <h1 class="h1Cart">Cart</h1>
+
+            </div>
+
+            <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+
+        </div>
+
+
+        <div class="cartDivMain">
+
+            <!-- Use of classes so that styling of specific groups of elements is easier -->
+            <div class="cartDivSecondary" style="width: 350px;">
+
+                <h1 class="h1Cart">Apply Discount Coupon:</h1>
+
+                <form action="" id="form1">
+                    <div style="display: flex; justify-content: space-around; text-align: center;">
+                        <label for="">
+                            <h4>none</h4>
+                        </label>
+                        <label for="">
+                            <h4>10%</h4>
+                        </label>
+                        <label for="">
+                            <h4>25%</h4>
+                        </label>
+                        <label for="">
+                            <h4>50%</h4>
+                        </label>
+
+                        <!-- Labels used to differentiate each radio button -->
+
+                    </div>
+                    <input name="discount" value="1" type="radio" checked id="dis1" onclick="calculate()">
+                    <input name="discount" value="2" type="radio" id="dis2" onclick="calculate()">
+                    <input name="discount" value="3" type="radio" id="dis3" onclick="calculate()">
+                    <input name="discount" value="4" type="radio" id="dis4" onclick="calculate()">
+
+                    <!-- Use of onclick function to execute existing JScript functions in the external JScript file 
+                    when a radio button is clicked on -->
+
+                </form>
+
+                <h1 class="h1Cart">Collection type:</h1>
+
+                <form id="form2" action="" style="display: flex; justify-content: space-around;">
+                    <label for="">
+                        <h4>Collection</h4>
+                    </label>
+                    <input name="delivery" type="radio" value="1" id="col1" checked onclick="calculate()">
+                    <label for="">
+                        <h4>Delivery</h4>
+                    </label>
+                    <input name="delivery" type="radio" value="2" id="col2" onclick="calculate()">
+                </form>
+
+                <h1 class="h1Cart">Delivery Options:</h1>
+
+                <form action="" id="form3">
+
+                    <!-- Use of forms to allow user input to be collected an processed through JScript functions
+                    and eventually outputted for the user to see -->
+
+                    <div style="display: flex; justify-content: space-around; text-align: center;">
+
+                        <label for="">
+                            <h4>Standard</h4>
+                        </label>
+                        <label for="">
+                            <h4>Express</h4>
+                        </label>
+                    </div>
+
+                    <input name="deliveryType" type="radio" value="1" checked id="typ1" onclick="calculate()">
+                    <input name="deliveryType" type="radio" value="2" id="typ2" onclick="calculate()">
+
+                </form>
+
+
+
+                </form>
+
+            </div>
+
+            <div class="cartDivSecondary">
+
+
+                <div class="cartDivTotals">
+                    <h4 class="h4Cart1">Items:</h4>
+                    <h4 class="h4Cart2" id="totalItem"></h4>
+                </div>
+                <div class="cartDivTotals">
+                    <h1 class="h4Cart1">Discount:</h1>
+                    <h1 class="h4Cart2" id="totalDiscount"></h1>
+
+                </div>
+                <div class="cartDivTotals">
+                    <h1 class="h4Cart1">VAT:</h1>
+                    <h1 class="h4Cart2" id="totalVat"></h1>
+
+                </div>
+                <div class="cartDivTotals">
+                    <h1 class="h4Cart1">Delivery:</h1>
+                    <h1 class="h4Cart2" id="totalDelivery"></h1>
+
+                </div>
+
+                <div class="cartDivTotals">
+                    <h1 class="h1Cart">Total:</h1>
+                    <h1 class="h1Cart" id="total"></h1>
+                </div>
+
+                <Button onclick="displayRefCode()">
+                    <h1 class="h1Cart">Checkout</h1>
+                </Button>
+
+            </div>
+
+        </div>
+
+        <!-- <button><h1>Confirm Order</h1></button> -->
+
+
+
+
+    </div>
+
+    <div id="reviewDiv2" style="position: relative;">
+
+        <div id="reviewDivInner2">
+            <a style="position: absolute; right: 3; top: -42;">
+                <h4 style="font-weight: 600; font-size: 25px;" onclick="hideRefCode()">X</h4>
+            </a>
+
+            <h4 class="h4Cart1">Your reference code is:</h4>
+            <h1 class="h1Cart" id="refCode"></h1>
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+        $("#reviewDiv2").hide();
+        displayCart();
+        genRefCode();
+    </script>
+
+    <!-- Use of script tags to run existing functions in the external JScript file -->
+</body>
+
+</html>

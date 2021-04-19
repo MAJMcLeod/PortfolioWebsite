@@ -1,0 +1,169 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="artPage.js"></script>
+    <link rel="stylesheet" href="artPageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!--
+        Importing both a CSS stylesheet, External Jscript File and external Text fonts
+    -->
+
+</head>
+
+<body id="body2">
+
+    <header>
+
+        <!-- Use of header elements to easliy seperate nav bar from body of web page -->
+        <div id="navDiv3">
+            <nav id="navSocial">
+                <ul class="navList2">
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Youtube3_svg_5282548.png" alt=""
+                                class="social2"></a></li>
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Twitter5_svg_5282551.png" alt=""
+                                class="social2"></a></li>
+
+                    <li><a href=""><img src="Logos/iconfinder_--26_2645010.png" alt="" class="social2"></a></li>
+
+                    <div id="socialTextDiv">
+                        <li id="socialtext2"><a href="artAboutPage.html">Email Me</a></li>
+                    </div>
+
+                </ul>
+
+            </nav>
+        </div>
+        <div id="navDiv2">
+            <video playsinline autoplay muted loop poster="polina.jpg" id="logo">
+
+                <source src="Video/ArtworkLogoWhite3.mp4" type="video/mp4">
+
+                <!-- video tag allows for import of video elements, along with commands to control 
+            said videa such as speed, loop, sound volume etc... -->
+            </video>
+
+            <!-- Use of video elements in page to make the webpage more presentable. 
+                CSS is used to make the video fit in the left corner of the nav bar -->
+
+            <div>
+                <nav id="navList">
+                    <ul class="navText">
+                        <li><a href="artLandingPage.html" class="navLi">Home</a></li>
+                        <li><a href="artAboutPage.html" class="navLi">About</a></li>
+                        <li><a href="artAnimationsPage.html" class="navLi">Animations</a></li>
+                        <li><a href="artBehindPage.html" class="navLi">Behind the Scenes</a></li>
+                        <li><a href="artStorePage.html" class="navLi">Store</a></li>
+
+
+                    </ul>
+                </nav>
+
+                <!-- Use of list and nav elements to create an interactive navigation bar for the page which allows 
+                    for the user to have quick and easy navigation through the pages -->
+            </div>
+
+        </div>
+
+    </header>
+
+    <div class="imgContainer">
+
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+
+            <source src="Video/ServiceHallAnimFINAL_3.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Use of video elements in background to make the webpage more presentable. 
+                CSS is used to make the video fit in the background behind all other elements -->
+
+    <br>
+    <br>
+
+
+    <div id="infoDiv">
+        <div id="iDiv1">
+            <img src="Images/ArtCollage2.jpg" alt="" id="imgColl">
+
+        </div>
+        <div id="iDiv2">
+            <h1 id="h1Info">Storytelling</h1>
+            <h4>Is one of my main focuses when it comes to making a 3d scene.
+                My influences range from books to movies to videogames.
+                I aim to create environments and pieces that immerse
+                the viewer into each different world depicted in the artworks. </h4>
+
+
+
+            <h1 id="h1Info">Improving Daily</h1>
+            <h4>I aim to improve piece by piece, creating new challenges for myself with each upcoming project. </h4>
+        </div>
+    </div>
+
+     <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+    
+
+    <div id="DivArt">
+        <table id="tblShow1">
+            <tr>
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/Vz-4j99Q6eE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+                <td><iframe width="560" height="315" src="https://www.youtube.com/embed/80KE4aiaKSs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></td>
+            </tr>
+
+            <!-- iFrame allows for implementation of youtube videos, giving the user/developer
+            control over the contents, dimensions and positions of the video -->
+        </table>
+
+        <br>
+        <br>
+    
+        <table id="tblShow2">
+            <tr>
+                <td><img src="Images/Showcase13.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/Showcase04.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/ServiceHall17.jpg" alt="" class="artworks"></td>
+            </tr>
+    
+            <tr>
+                <td><img src="Images/Marble15.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/SpottersV13.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/ForestV9.jpg" alt="" class="artworks"></td>
+            </tr>
+    
+            <tr>
+                <td><img src="Images/FarmhouseV7FinalCheap.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/MonolithFinal.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/TerrainTutorialV10.jpg" alt="" class="artworks"></td>
+            </tr>
+    
+            <tr>
+                <td><img src="Images/LockdownV24Still.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/ContainmentV8Final.jpg" alt="" class="artworks"></td>
+                <td><img src="Images/ExpanseV11.jpg" alt="" class="artworks"></td>
+            </tr>
+        </table>
+
+        <!-- Use of table elements in a similar manner to that of Divs so that elements are well
+        positioned and aligned, making the page more tidy and presentabe allowing for a better 
+    flow of elements -->
+    </div>
+
+    <script>
+        imgInteract();
+    </script>
+
+    <!-- Use of script tags to run existing functions in the external JScript file -->
+    
+
+
+
+</body>
+
+</html>

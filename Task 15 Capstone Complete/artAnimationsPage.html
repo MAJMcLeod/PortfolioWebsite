@@ -1,0 +1,144 @@
+<html>
+
+<head>
+
+    <script type="text/javascript" src="artPage.js"></script>
+    <link rel="stylesheet" href="artPageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+    <!--
+        Importing both a CSS stylesheet, External Jscript File and external Text fonts
+    -->
+
+
+</head>
+
+<body>
+    <header>
+        <!-- Use of header elements to easliy seperate nav bar from body of web page -->
+        <div id="navDiv3">
+            <nav id="navSocial">
+                <ul class="navList2">
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Youtube3_svg_5282548.png" alt=""
+                                class="social2"></a></li>
+                    <li><a href=""><img src="Logos/iconfinder_Rounded_Twitter5_svg_5282551.png" alt=""
+                                class="social2"></a></li>
+
+                    <li><a href=""><img src="Logos/iconfinder_--26_2645010.png" alt="" class="social2"></a></li>
+
+                    <div id="socialTextDiv">
+                        <li id="socialtext2"><a href="artAboutPage.html">Email Me</a></li>
+                    </div>
+
+                </ul>
+
+            </nav>
+        </div>
+        <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+        <div id="navDiv2">
+            <video playsinline autoplay muted loop poster="polina.jpg" id="logo">
+
+                <source src="Video/AnimationsLogoWhite.mp4" type="video/mp4">
+            </video>
+
+            <!-- Use of video elements in page to make the webpage more presentable. 
+                CSS is used to make the video fit in the left corner of the nav bar -->
+
+            <div>
+                <nav id="navList">
+                    <!-- Use of list and nav elements to create an interactive navigation bar for the page which allows 
+                    for the user to have quick and easy navigation through the pages -->
+                    <ul class="navText">
+                        <li><a href="artLandingPage.html" class="navLi">Home</a></li>
+                        <li><a href="artAboutPage.html" class="navLi">About</a></li>
+                        <li><a href="artWorksPage.html" class="navLi">Artworks</a></li>
+                        <li><a href="artBehindPage.html" class="navLi">Behind the Scenes</a></li>
+                        <li><a href="artStorePage.html" class="navLi">Store</a></li>
+
+
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+        <!-- Use of divs so that styling and element positioning is made faster and more managable in CSS -->
+
+    </header>
+
+    <div class="imgContainer">
+
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+
+            <source src="Video/WebBackground3.mp4" type="video/mp4">
+
+            <!-- video tag allows for import of video elements, along with commands to control 
+            said videa such as speed, loop, sound volume etc... -->
+        </video>
+    </div>
+
+    <!-- Use of video elements in background to make the webpage more presentable. 
+                CSS is used to make the video fit in the background behind all other elements -->
+
+
+    <div class="animDiv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QVtSoTlqR5s" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="animVid"></iframe>
+
+        <!-- iFrame allows for implementation of youtube videos, giving the user/developer
+            control over the contents, dimensions and positions of the video -->
+        <table class="tblAnim">
+            <tr>
+                <td>
+                    <h1 id="h1info2">Containment Breach 2020</h1>
+                </td>
+                <td>
+                    <h4>Containment breach was a project in which I took all my 4 months of knowledge in blender at the
+                        time and applied it
+                        to one focused animation. Inspired by the SCP series. </h4>
+                </td>
+
+            </tr>
+        </table>
+
+        <!-- Use of table elements in a similar manner to that of Divs so that elements are well
+        positioned and aligned, making the page more tidy and presentabe allowing for a better 
+    flow of elements -->
+    </div>
+
+    <div class="animDiv">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sbugXYV5GM4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen class="animVid"></iframe>
+
+            <!-- iFrame allows for implementation of youtube videos, giving the user/developer
+            control over the contents, dimensions and positions of the video -->
+
+        <table class="tblAnim">
+            <tr>
+                <td>
+                    <h1 id="h1info2">War 2020</h1>
+                </td>
+                <td>
+                    <h4>Another animation made during my early stages of learning blender, I used this as a way to learn
+                        some basic character animation
+                        and sound design </h4>
+                </td>
+
+            </tr>
+        </table>
+
+
+    </div>
+
+
+</body>
+
+</html>
